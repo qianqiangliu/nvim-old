@@ -15,9 +15,10 @@ require("lazy").setup({
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
     'ojroques/nvim-osc52',
+    'folke/tokyonight.nvim',
 })
 
 require('lualine').setup {
-    options = { theme = 'powerline' }
+    options = { theme = 'tokyonight' }
 }
 require('telescope').setup()

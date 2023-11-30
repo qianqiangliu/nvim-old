@@ -12,3 +12,5 @@ vim.api.nvim_create_autocmd({ 'BufRead', 'BufReadPost' }, {
 require('options')
 require('plugins')
 require('mapping')
+
+vim.cmd[[colorscheme tokyonight]]
