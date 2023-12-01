@@ -26,7 +26,12 @@ require('lualine').setup {
     options = { theme = 'gruvbox' }
 }
 require('telescope').setup()
-require('oil').setup()
+require('oil').setup({
+    win_options = {
+        number = false,
+        relativenumber = false
+    },
+})
 require'FTerm'.setup({
     border = 'double',
     dimensions  = {
