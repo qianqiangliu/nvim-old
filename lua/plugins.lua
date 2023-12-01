@@ -16,9 +16,20 @@ require("lazy").setup({
     },
     'ojroques/nvim-osc52',
     'folke/tokyonight.nvim',
+    'ellisonleao/gruvbox.nvim',
+    'stevearc/oil.nvim',
+    'numToStr/FTerm.nvim',
 })
 
 require('lualine').setup {
-    options = { theme = 'tokyonight' }
+    options = { theme = 'gruvbox' }
 }
 require('telescope').setup()
+require('oil').setup()
+require'FTerm'.setup({
+    border = 'double',
+    dimensions  = {
+        height = 0.9,
+        width = 0.9,
+    },
+})

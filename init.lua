@@ -13,4 +13,4 @@ require('options')
 require('plugins')
 require('mapping')
 
-vim.cmd[[colorscheme tokyonight]]
+vim.cmd[[colorscheme gruvbox]]
