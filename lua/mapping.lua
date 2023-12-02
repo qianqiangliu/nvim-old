@@ -7,6 +7,15 @@ vim.keymap.set('c', '<C-f>', '<Right>', { noremap = true })
 -- map 'C-]' to gC-]
 vim.keymap.set('n', '<C-]>', 'g<C-]>', { noremap = true })
 
+-- linux coding style
+function linux_coding_style()
+    vim.opt_local.shiftwidth = 8
+    vim.opt_local.tabstop = 8
+    vim.opt_local.softtabstop = 8
+end
+
+vim.keymap.set('n', '<leader>l', '<CMD>lua linux_coding_style()<CR>')
+
 -- telescope
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>f', builtin.find_files, {})
